@@ -124,3 +124,24 @@ public class Main {
 }
 
 // 8. To find out whether the given String is Palindrome or not.
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String a = sc.nextLine();
+        String b="";
+        int len = a.length();
+        for (int i=(len-1);i>=0;i--){
+            b=b+a.charAt(i);
+        }
+        if (a.equals(b)){
+            System.out.println("Palindrome");
+        }
+        else{
+            System.out.println("Not a Palindrome");
+        }
+    }
+}
+
+// 9.
