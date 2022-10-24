@@ -1,3 +1,6 @@
+// Java Basic Programs :
+
+// 1.Write a program to print whether a number is even or odd, also take input from the user.
 
 import java.util.Scanner;
 public class Main {
@@ -12,3 +15,17 @@ public class Main {
         }
     }
 }
+
+// 2.Take name as input and print a greeting message for that particular name.
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String a = sc.nextLine();
+        System.out.println("hi this message is to welcome "+a);
+    }
+}
+
+// 3.Write a program to input principal, time, and rate (P, T, R) from the user and find Simple Interest.
+
