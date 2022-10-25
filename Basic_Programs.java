@@ -144,4 +144,27 @@ public class Main {
     }
 }
 
-// 9.
+// 9. To find Armstrong Number between two given number.
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a,b;
+        a=sc.nextInt();
+        b=sc.nextInt();
+        for(int i=a;i<=b;i++){
+            int num=i;
+            int sum=0;
+            while(num>0){
+                int c=num%10;
+                num=num/10;
+                sum=sum+(c*c*c);
+            }
+            if(sum==i){
+                System.out.println(i+" ");
+            }
+        }
+    }
+}
+
