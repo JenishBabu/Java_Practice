@@ -71,4 +71,32 @@ public class Main {
     }
 }
 
-// 25.
+// 25.Take integer inputs till the user enters 0 and print the largest number from all.
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n;
+        int max=0;
+        while((n=sc.nextInt())>0){
+            if(max<n){
+                max=n;
+            }
+        }
+        System.out.println(max);
+    }
+}
+
+// 26.Addition Of Two Numbers
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a,b;
+        a=sc.nextInt();
+        b=sc.nextInt();
+        System.out.println(a+b);
+    }
+}
