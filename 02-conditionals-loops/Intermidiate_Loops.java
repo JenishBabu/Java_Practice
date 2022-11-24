@@ -1,4 +1,4 @@
-// 1.Factorial Program In Java
+// Factorial Program In Java
 
 import java.util.Scanner;
 public class Main {
@@ -13,7 +13,7 @@ public class Main {
     }
 }
 
-// 2.Calculate Electricity Bill
+// Calculate Electricity Bill
 
 import java.util.Scanner;
 public class Main {
@@ -35,7 +35,7 @@ public class Main {
     }
 }
 
-// 3.Calculate Average Of N Numbers
+// Calculate Average Of N Numbers
 
 import java.util.Scanner;
 public class Main {
@@ -51,7 +51,7 @@ public class Main {
     }
 }
 
-// 4.Calculate Discount Of Product
+// Calculate Discount Of Product
 
 import java.util.Scanner;
 public class Main {
@@ -75,7 +75,7 @@ public class Main {
     }
 }
 
-// 5.Calculate Distance Between Two Points
+// Calculate Distance Between Two Points
 
 import java.util.Scanner;
 public class Main {
@@ -91,7 +91,7 @@ public class Main {
     }
 }
 
-// 6.Calculate Commission Percentage
+// Calculate Commission Percentage
 
 import java.util.Scanner;
 public class Main {
@@ -104,7 +104,7 @@ public class Main {
     }
 }
 
-// 7.Power In Java
+// Power In Java
 
 import java.util.Scanner;
 public class Main {
@@ -117,5 +117,69 @@ public class Main {
           s=s*n;
       }
         System.out.println(s);
+    }
+}
+
+// Sum Of N Numbers
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(); 
+        int s=0;
+        for(int i=1;i<=n;i++){
+            int a = sc.nextInt();
+            s=s+a;
+        }
+        System.out.println(s);
+
+    }
+}
+
+// Armstrong Number In Java
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+       int s=0;
+       int temp = n;
+        while(temp>0){
+            int u = temp%10;
+            temp=(temp/10);
+            s = s+(u*u*u);
+        }
+        if (n==s){
+            System.out.println("ArmStrong");
+        }
+        else{
+            System.out.println("Not Armstrong");
+        }
+    }
+}
+
+// nCr
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+       int r = sc.nextInt();
+       int a=1,b=1,c=1;
+       for(int i=1;i<=n;i++){
+           a=a*i;
+       }
+       for(int j=1;j<=r;j++){
+           b=b*j;
+       }
+       for(int k = 1; k <=(n-r); k++){
+           c=c*k;
+       }
+       double d = a/(b*c);
+        System.out.println(d);
+
     }
 }
