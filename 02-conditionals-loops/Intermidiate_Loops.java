@@ -183,3 +183,71 @@ public class Main {
 
     }
 }
+
+// nPr
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+       int r = sc.nextInt();
+       int a=1,c=1;
+       for(int i=1;i<=n;i++){
+           a=a*i;
+       }
+       for(int k = 1; k <=(n-r); k++){
+           c=c*k;
+       }
+       double d = a/c;
+        System.out.println(d);
+
+    }
+}
+
+
+// Reverse a String 
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+       int r = sc.nextInt();
+       int a=1,c=1;
+       for(int i=1;i<=n;i++){
+           a=a*i;
+       }
+       for(int k = 1; k <=(n-r); k++){
+           c=c*k;
+       }
+       double d = a/c;
+        System.out.println(d);
+
+    }
+}
+
+
+// Check Palindrome in Number
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String a = sc.nextLine();
+        char b;
+        String c="";
+        for (int i =0;i<=a.length()-1;i++){
+            b=a.charAt(i);
+            c=b+c;
+        }
+        System.out.println(c);
+        if(c.equals(a)){
+            System.out.println("Palindrome");
+        }
+        else {
+            System.out.println("Not a Palindrome");
+        }
+    }
+}
+
